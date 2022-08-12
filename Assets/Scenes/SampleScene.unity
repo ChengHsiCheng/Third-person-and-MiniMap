@@ -1339,7 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfe3c2629ceba1b468dd81bf9184914e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerBody: {fileID: 1346472937}
+  playerpos: {fileID: 2145345694}
 --- !u!1 &1046214970
 GameObject:
   m_ObjectHideFlags: 0

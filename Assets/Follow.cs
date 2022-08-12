@@ -5,12 +5,7 @@ using UnityEngine;
 public class Follow : MonoBehaviour
 {
     public Transform player;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         //跟隨玩家
