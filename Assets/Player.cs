@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float h = Input.GetAxis("Horizontal");//input水平
@@ -30,6 +29,7 @@ public class Player : MonoBehaviour
             Quaternion targetRotation = Quaternion.Euler(0, faceAngle, 0);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation * Quaternion.Euler(0, y ,0), 0.2f);
 
+            //玩家移動
             controller.Move(target * Time.deltaTime * speed);
         }
     }
