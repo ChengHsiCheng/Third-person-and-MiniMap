@@ -11,7 +11,6 @@ public class MiniMapCamera : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         //設定攝影機位置和角度

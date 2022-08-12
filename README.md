@@ -99,4 +99,61 @@ public class Player : MonoBehaviour
 
 
 ## 小地圖
+在Hierarchy新增一個Camera取名為MiniMapCamera
+
+![GITHUB](https://i.imgur.com/GI5YbCx.png)
+
+在Project新增一個Render Texture取名為MiniMapTex
+
+![GITHUB](https://i.imgur.com/nVvk4HK.png)
+
+在Hierarchy新增一個Raw Image取名為MiniMap
+![GITHUB](https://i.imgur.com/J1JT7pZ.png)
+
+把MiniMap設定到合適的大小和位置
+
+![GITHUB](https://i.imgur.com/4AXcnEF.png)
+
+![GITHUB](https://i.imgur.com/DY1MdB4.png)
+
+把MinimapTex設定到合適的大小
+![GITHUB](https://i.imgur.com/CrvZoZf.png)
+
+把MiniMapCamera的Target Texture設定為MiniMapTex
+
+![GITHUB](https://i.imgur.com/YSu85L7.png)
+
+把MiniMap的Texture設定為MiniMapTex
+
+![GITHUB](https://i.imgur.com/BOU5u9w.png)
+
+MiniMapCamera
+```C#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MiniMapCamera : MonoBehaviour
+{
+    public Transform player;
+    public Transform mainCamera;
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        //設定攝影機位置和角度
+        transform.position = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z);//玩家位置
+        transform.rotation = Quaternion.Euler(90f, mainCamera.transform.eulerAngles.y, 0);//主攝影機角度
+    }
+}
+
+```
+把player設定為玩家 把mainCamera設定為Main Camera
+
+![GITHUB](https://i.imgur.com/mbTIav8.png)
+
+
 
