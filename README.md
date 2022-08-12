@@ -117,6 +117,7 @@ public class Player : MonoBehaviour
 ![GITHUB](https://i.imgur.com/DY1MdB4.png)
 
 把MinimapTex設定到合適的大小
+
 ![GITHUB](https://i.imgur.com/CrvZoZf.png)
 
 把MiniMapCamera的Target Texture設定為MiniMapTex
