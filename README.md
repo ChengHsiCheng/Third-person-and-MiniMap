@@ -1,6 +1,7 @@
 # 第三人稱視角 及 小地圖
 ## 第三人稱視角
 新增一個空物件取名為PlayerPos 把Main拖曳為其子物件
+
 ![GITHUB](https://i.imgur.com/eJlvJFA.png)
 
 MainCamera
@@ -27,6 +28,7 @@ public class Camera : MonoBehaviour
 }
 ```
 把playerpos設定為PlayerPos
+
 ![GITHUB](https://i.imgur.com/Uu2fZHG.png)
 
 PlayerPos
@@ -47,5 +49,6 @@ public class Follow : MonoBehaviour
 }
 ```
 把player設定為玩家
+
 例: ![GITHUB](https://i.imgur.com/XM9NIM4.png)
 
